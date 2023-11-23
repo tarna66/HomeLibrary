@@ -1,0 +1,160 @@
+@import '../global.scss';
+
+.wrapper {
+ padding: 0 40px 40px 40px;
+}
+  
+.booklist {
+   // font-family: sans-serif;
+   // text-align: center;
+    margin: 4em;
+    .name {
+        display: inline-flex;
+        font-weight: 600 ; 
+        font-size: large;
+        margin-bottom: 5px;
+        padding-right: 1em;;
+    }
+    .bookitem {
+        margin: 0.5em;
+        background-color:  $defaultBackgroundColor;
+        border: 1px solid $defaultBorderColor;
+        border-radius: 6px;
+    }
+
+    .maincontainer {
+    display: flex;
+        padding: 0.25em;
+        width: 100%;
+        .contentcontainer {
+            padding: 0.25em;
+            width: 100%;
+        }
+    }
+   
+    .addbutton {
+        float: right;
+        margin-right: 1em;
+    }
+    .textcontainer {
+        margin-left: 1em;
+    }
+
+    .picture {
+        align-self: center;
+        margin-left: 0.25em;
+        height: 100px;
+   
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: start;
+    }
+  
+    .itemheader {
+        float: right;
+    }
+    .header {
+        padding: 0.25em 0 0.25em 0.25em
+    }
+       
+    .buttoncontainer {
+        float: right;
+    }
+
+    .overview {
+        word-wrap: break-word;
+        margin: 0px;
+    }
+    
+    .alertContainer {
+        display: flex;
+        margin: 4em;
+    }
+    
+}
+.confirmDeleteModal .modal-content {
+    
+  //border: 1px solid #ff5d40;
+  border: 2px solid  $defaultBorderColor;;
+    .modal-header {
+        background-color: $warningBackgroundColor;
+        font-size: large;
+    }
+    .modal-footer {
+        padding: 6px;
+    }
+    .modal-body {
+        font-size: large;
+        padding: 1em;
+    }
+    .delcontainer
+    {
+        padding:0 0 1em 1em;
+    }  
+}
+
+.infoCanvas {
+  width: 700px !important;
+  display: flex;
+  margin: 1em 0 1em 1em;
+  border-radius: 6px;
+  
+
+    .offcanvas-body{
+       
+        border-top: 1px solid $canvasHeaderBorder;
+        label{
+            font-weight: 600;
+        }
+        .picture {
+            align-self: center;
+            margin-left: 0.25em;
+            width: 400px;;
+            margin-bottom: 1em;
+        }
+        .description {
+            border: 1px dotted $defaultBorderColor;
+            margin-bottom: 1em;
+            width: 100%;
+            .descriptionObject {
+                width: 100%;
+            }
+        }
+    } 
+    .offcanvas-footer{
+        padding: 1rem 1rem;
+        border-top: 1px solid $canvasFooterBorder;
+    }
+ 
+}
+
+.listofbooks {
+    border: 1px solid $defaultBorderColor;
+    border-radius: 10px;
+    padding: 1em 2em 1em 2em; 
+    background-color: $defaultBackgroundColor;
+    position: absolute;
+    z-index: -2;
+    width: 80%;
+}
+
+.listofbooks::after {
+    content: "";
+  //  background-image: url('http://localhost:8000/images/aukeama2.png') ;
+    background-repeat: 'repeat';
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    width: auto;
+}

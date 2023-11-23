@@ -1,0 +1,29 @@
+@import '../style/Links.scss';
+.tools {
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0 ;
+    align-items: center;
+    color:  $basicWhite;
+}
+.toolcontainer {
+    align-items: center;
+    display: flex;
+    float: right;
+    
+    }
+    .amountofbooks {
+        margin-left: 1em;
+    }
+    
+.togglebutton {
+    color: $basicWhite;
+    margin-right: 1em;
+    &:hover {
+        border-color: $basicWhite; 
+        color: $basicWhite;
+     }
+    }
+   
+}

@@ -1,0 +1,101 @@
+@import '../global.scss';
+
+.finnabook {
+margin-top:5em;
+  .name {
+    display: inline-flex;
+    font-weight: 600 ; 
+    font-size: large;
+    margin-bottom: 5px;
+    padding-right: 1em;
+  }
+  .finnaitem {
+    margin: 0.5em;
+    background-color: white;;
+    border: 1px solid $defaultBorderColor;
+    border-radius: 10px;
+  }
+
+  .container {
+    display: flex;
+  }
+  .addbutton {
+    float: right;
+    margin-right: 01em;
+  }
+  .textcontainer {
+    margin-left: 1em;
+    label {
+      font-weight: 600;
+      padding-right: 0.5em;
+    }
+  }
+
+  .picture {
+    align-self: center;
+    margin-left: 0.25em;
+    height: 100px;
+    margin-bottom: 1em;
+  }
+
+  .picture:hover {
+    height: 400px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+  }
+
+  .description {
+    border: 1px dotted $defaultBorderColor;
+    width: 24.5em;
+  }
+  .itemheader {
+    float: right;
+  }
+  .header {
+    padding-left: 1em;
+    padding-top: 0.5em;
+  }
+  .overview {
+    word-wrap: break-word;
+    margin: 0px;
+    max-width: 25em;
+  }
+  .finnaform {
+    margin: 1em 0 0.5em 1em;
+    padding-left: 1.5em;
+    width: 60%;
+  }
+  .spinnercontainer {
+    display: flex;
+    h3 {
+      padding-right: 2em;
+    }
+  }
+  .searchButton {
+    background-color:  $searchButtonBackgroundColor;
+    border: 1px solid $defaultBorderColor;
+    border-radius: 5px;
+    color: $searchButtonColor;
+    padding: 12px;
+  
+  }
+  .searchButton:hover {
+    color:   $searchButtonHoverColor;
+    background-color: $searchButtonHoverBackgroundColor;
+  }
+  .form-control{
+    border-color: $defaultBorderColor;
+  }
+  .form-control:focus{
+    border-color:  $defaultBorderColor;
+
+  }
+  .alertContainer {
+    display: flex;
+    padding-left: 2.5em;
+  }
+}

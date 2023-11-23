@@ -1,0 +1,62 @@
+//_index.scss
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+body::after {
+  content: "";
+  background-image: url('http://localhost:8000/images/pieni.jpg') ;
+  background-repeat: 'repeat';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -5;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+// colors
+$basicWhite: #fff;
+$fogGrey: #dee2e6;
+$smokeGrey: #eeeeee80;
+$ashGrey: #6c757d;
+$middleGrey:#8e8e8e; //rgb(134, 126, 126);
+
+$middleYellow: #f9faa8;
+
+
+
+// default colors
+  $defaultTextColor: $ashGrey;
+  $defaultBorderColor: $ashGrey;
+  $defaultBackgroundColor: $basicWhite;
+  $defaultHoverColor: $basicWhite;
+  $defaultHoverBackgroundColor: $ashGrey;
+
+
+  // component colors
+  $canvasHeaderBorder: $fogGrey;
+  $canvasFooterBorder: $fogGrey;
+
+  $searchButtonColor: $defaultTextColor;
+  $searchButtonBackgroundColor: $defaultBackgroundColor;
+
+  $searchButtonHoverColor: $defaultHoverColor;
+  $searchButtonHoverBackgroundColor:  $defaultHoverBackgroundColor;
+
+  $formLabelBackgroundColor: $smokeGrey;
+
+  $warningBackgroundColor: $middleYellow;
