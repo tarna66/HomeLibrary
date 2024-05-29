@@ -1,5 +1,7 @@
 
-## STUDY EXERCISE "HOME LIBRARY"
+## STUDY EXERCISE "HOME LIBRARY"<br>
+With this program, you can catalog the books you own. You can search for a book by its ISBN number in the Finna database (Finland) and add them to your own database.
+You can browse and edit the information of your saved books.<br>
 
 
 ### HOW TO USE:<br>
