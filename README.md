@@ -1,7 +1,8 @@
-Study exercise "Home library"
 
-HOW TO USE.
+STUDY EXERCISE "HOME LIBRARY"
 
+
+HOW TO USE:
 You need to have npm and MongoDb (locally) installed.
 You need to add .env file to server folder
 In a .env -file should include
